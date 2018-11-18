@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+}
+
+.approval {
+    margin: 1em;
+    color: blue;
+}
+
+.disapproval {
+    margin: 1em;
+    color: red;
+}
