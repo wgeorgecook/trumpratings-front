@@ -10,7 +10,7 @@ class Page extends Component {
     }
 
     componentDidMount() {
-        ApiData.getAll()
+        ApiData.getLatest()
         .then( tweetInfo => this.setState( { tweetInfo } ) )
     }
 
