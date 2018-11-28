@@ -24,3 +24,7 @@ li {
     border: solid black 1px;
     border-radius: .25em;
 }
+
+.embdedTweet {
+    margin: auto;
+}
