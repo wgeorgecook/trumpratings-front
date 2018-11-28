@@ -23,13 +23,13 @@ class Page extends Component {
                 <h1> No tweet data available. </h1>
             </div> :
             <div id="tweetData">
-                <h1>Latest tweets:</h1>
+                <h1>Latest Tweet Data</h1>
                 <ul className="tweets">
                     { this.state.tweetInfo.map( (tweet, index) =>
                         <li key={index} className="tweet">
                             <div>
-                                {(tweet.approval) ? <span className='approval'>Approval Rating: { tweet.approval }%</span> : <span className='approval'>No approval data</span>}
-                                {(tweet.disapproval) ? <span className='disapproval'>Disapproval Rating: { tweet.disapproval }%</span> : <span className='disapproval'>No disapproval data</span>}
+                                {(tweet.approval) ? <div className='approval'>Approval Rating: { tweet.approval }%</div> : <div className='approval'>No approval data</div>}
+                                {(tweet.disapproval) ? <div className='disapproval'>Disapproval Rating: { tweet.disapproval }%</div> : <div className='disapproval'>No disapproval data</div>}
                                 <div className="tweetDate"> Posted on: { tweet.date_posted } </div>
                                 <div className="embdedTweet">
                                     <TweetEmbed id={tweet.tweet_id} />
