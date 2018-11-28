@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as ApiData from './apiData.js';
+import TweetEmbed from 'react-tweet-embed'
 import './Page.css';
 
 
@@ -30,8 +31,9 @@ class Page extends Component {
                                 {(tweet.approval) ? <span className='approval'>Approval Rating: { tweet.approval }%</span> : <span className='approval'>No approval data</span>}
                                 {(tweet.disapproval) ? <span className='disapproval'>Disapproval Rating: { tweet.disapproval }%</span> : <span className='disapproval'>No disapproval data</span>}
                                 <div className="tweetDate"> Posted on: { tweet.date_posted } </div>
-                                <div className="tweetText"> {tweet.tweet_text } </div>
-                                <div className='tweetUrl'>{ tweet.tweet_url }</div>
+                                <div className="embdedTweet">
+                                    <TweetEmbed id={tweet.tweet_id} />
+                                </div>
                             </div>
                         </li>
                     )
