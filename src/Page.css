@@ -6,15 +6,18 @@ li {
     margin: .5em;
 }
 .approval {
-    margin: 1em;
     color: blue;
+    grid-area: approval;
 }
 
 .disapproval {
-    margin: 1em;
     color: red;
+    grid-area: disapproval;
 }
 
+.tweetDate {
+    grid-area: date;
+}
 .tweets {
     padding: 1em;
     margin: auto;
@@ -23,8 +26,12 @@ li {
 .tweet {
     border: solid black 1px;
     border-radius: .25em;
+    grid: approval    embeded
+          disapproval embeded
+          date        embeded;
 }
 
 .embdedTweet {
     margin: auto;
+    grid-area: embeded;
 }
