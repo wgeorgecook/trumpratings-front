@@ -2,6 +2,9 @@ ul {
     list-style-type: none;
 }
 
+li {
+    margin: .5em;
+}
 .approval {
     margin: 1em;
     color: blue;
@@ -10,4 +13,14 @@ ul {
 .disapproval {
     margin: 1em;
     color: red;
+}
+
+.tweets {
+    padding: 1em;
+    margin: auto;
+}
+
+.tweet {
+    border: solid black 1px;
+    border-radius: .25em;
 }
