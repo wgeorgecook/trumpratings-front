@@ -1,37 +1,38 @@
-ul {
+.tweetMap {
     list-style-type: none;
+    padding-left: 0;
+    width: 85%;
+    margin: auto;
 }
 
-li {
-    margin: .5em;
+.tweetItem {
+    border-radius: .33em;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: .25em;
+    margin: .75em;
 }
+
 .approval {
     color: blue;
-    grid-area: approval;
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
 
 .disapproval {
     color: red;
-    grid-area: disapproval;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 .tweetDate {
-    grid-area: date;
-}
-.tweets {
-    padding: 1em;
-    margin: auto;
+    grid-column: 1/2;
+    grid-row: 3/3;
 }
 
-.tweet {
-    border: solid black 1px;
-    border-radius: .25em;
-    grid: approval    embeded
-          disapproval embeded
-          date        embeded;
-}
-
-.embdedTweet {
-    margin: auto;
-    grid-area: embeded;
+.embededTweet {
+    grid-column: 2;
+    grid-row: span 3;
 }
