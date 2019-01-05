@@ -34,19 +34,24 @@ a:hover {
 }
 
 .pollData {
-    font-size: 2.5em;
+    font-size: 3em;
+}
+
+.pollLabel {
+    font-size: 1.25em;
 }
 
 .approval {
     color: green;
-    margin-top: auto;
-
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .disapproval {
     color: red;
     grid-row: 2/2;
-    margin-bottom: auto;
+    margin: auto;
+    margin-top: 10px;
 }
 
 
