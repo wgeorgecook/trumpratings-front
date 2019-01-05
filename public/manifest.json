@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Trumpratings Front",
+  "name": "Front End for @Trumpratings",
   "icons": [
     {
       "src": "favicon.ico",
