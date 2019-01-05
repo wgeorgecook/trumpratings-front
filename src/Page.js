@@ -23,7 +23,8 @@ class Page extends Component {
                 <h1> No tweet data available. </h1>
             </div> :
             <div id="tweetData">
-                <h1>Latest Tweet Data</h1>
+                <h1>Latest Tweets from @realDonaldTrump</h1>
+                <h2>Polling data from <a href="https://news.gallup.com/poll/203198/presidential-approval-ratings-donald-trump.aspx">Gallup Polls</a></h2>
                 <ul className="tweetMap">
                     { this.state.tweetInfo.map( (tweet, index) =>
                         <li key={index} className="tweetItem">
