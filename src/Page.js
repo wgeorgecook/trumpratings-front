@@ -28,8 +28,8 @@ class Page extends Component {
                 <ul className="tweetMap">
                     { this.state.tweetInfo.map( (tweet, index) =>
                         <li key={index} className="tweetItem">
-                            {(tweet.approval) ? <div className='approval'><span className='pollData'>{ tweet.approval }</span>% approving</div> : <div className='approval'>No approval data</div>}
-                            {(tweet.disapproval) ? <div className='disapproval'><span className='pollData'>{ tweet.disapproval }</span>% disapproving</div> : <div className='disapproval'>No disapproval data</div>}
+                            {(tweet.approval) ? <div className='approval'><span className='pollData'>{ tweet.approval }%</span> approving</div> : <div className='approval'>No approval data</div>}
+                            {(tweet.disapproval) ? <div className='disapproval'><span className='pollData'>{ tweet.disapproval }%</span> disapproving</div> : <div className='disapproval'>No disapproval data</div>}
                             <TweetEmbed id={tweet.tweet_id} className="embededTweet"/>
                         </li>
                     )
