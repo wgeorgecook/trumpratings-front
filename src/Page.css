@@ -38,13 +38,15 @@ a:hover {
 }
 
 .approval {
-    color: blue;
-    margin-top: 1em;
+    color: green;
+    margin-top: auto;
+
 }
 
 .disapproval {
     color: red;
     grid-row: 2/2;
+    margin-bottom: auto;
 }
 
 
